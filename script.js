@@ -1,3 +1,5 @@
+
+
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -23,4 +25,15 @@ window.onscroll = () => {
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
+    
 }
+const formData = new FormData();
+formData.append("access_key", "b5d7e66b-a8ff-45e4-a0a6-8236436e3d55");
+formData.append("name", "John Doe");
+formData.append("email", "john@example.com");
+formData.append("message", "Hello World!");
+
+const response = await fetch("https://api.web3forms.com/submit", {
+  method: "POST",
+  body: formData
+});
