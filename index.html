@@ -160,20 +160,26 @@
    </section>
 
    <section class="contact" id="contact">
-      <form action="https://api.web3forms.com/submit" method="POST"></form>
-      <h2 class="heading">Contacter <span>Moi</span></h2>
-      <form action="">
-         <div class="input-box">
-            <input type="hidden" name="access_key" value="b5d7e66b-a8ff-45e4-a0a6-8236436e3d55">
-            <input type="text" name="name" placeholder="Nom" required>
-            <input type="email" placeholder="Email" required>
-            <input type="text" placeholder="Objet">
-         </div>
-         <textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
-         <input type="submit" value="envoyer  message" class="btn">
-      </form>
-   </section>
+  <h2 class="heading">Contacter <span>Moi</span></h2>
 
+  <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+    <!-- Clé d'accès Web3Forms -->
+    <input type="hidden" name="access_key" value="b5d7e66b-a8ff-45e4-a0a6-8236436e3d55">
+
+    <div class="input-box">
+      <input type="text" name="name" placeholder="Nom" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="subject" placeholder="Objet">
+    </div>
+
+    <textarea name="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
+
+    <!-- Optionnel : redirection après envoi -->
+    <input type="hidden" name="redirect" value="https://ton-nom.github.io/merci.html">
+
+    <input type="submit" value="Envoyer le message" class="btn">
+  </form>
+</section>
    <footer class="footer">
       <div class="social">
 
