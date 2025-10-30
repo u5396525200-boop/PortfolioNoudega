@@ -613,8 +613,10 @@ footer ul.list li a:hover {
 footer p.copyright {
   margin: 0;
   font-size: 14px;
-  color: #770000;              /* rouge très foncé pour le copyright */
+  color: #770000; /* rouge très foncé sur fond noir */
 }
+           /* rouge très foncé pour le copyright */
+
 
 /* Responsive – pour écrans plus petits */
 @media (max-width: 768px) {
